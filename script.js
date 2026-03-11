@@ -14,7 +14,7 @@
       '<div class="footer-inner">' +
         '<div class="footer-brand">' +
           '<div class="nav-logo"><img src="img/logo.jpg" alt="Compagnon Destrich couvreur Grenoble"/><span class="nav-logo-text" style="color:#fff;">Compagnon <span style="color:var(--orange)">Destrich</span></span></div>' +
-          '<p>Compagnon Destrich – Artisan couvreur qualifié, Grenoble & Sassenage (38). Toiture, zinguerie, maçonnerie sur l\'Isère.</p>' +
+          '<p>Compagnon Destrich – Artisan couvreur compagnon, 25 ans d\'expérience. Grenoble, Sassenage & Voiron (38). Nettoyage toiture, démoussage, hydrofuge, façade, nacelle.</p>' +
         '</div>' +
         '<div class="footer-col"><h4>Navigation</h4><ul>' +
           '<li><a href="#" data-page="accueil">Accueil</a></li>' +
