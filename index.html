@@ -40,24 +40,52 @@
   <!-- HERO avec slideshow -->
   <section class="hero">
     <div class="hero-slides" id="heroSlides">
-      <div class="hero-slide active" style="background-image:url('img/hero.jpg')"></div>
+      <div class="hero-slide active" style="background-image:url('img/grenoble-1.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/grenoble-2.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/hero.jpg')"></div>
       <div class="hero-slide" style="background-image:url('img/hero-2.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('img/hero-3.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('img/hero-4.jpg')"></div>
     </div>
     <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge"><span style="display:inline-flex;gap:2px;margin-right:6px;"><span style="width:6px;height:14px;background:#002395;border-radius:1px;"></span><span style="width:6px;height:14px;background:#fff;border-radius:1px;"></span><span style="width:6px;height:14px;background:#ED2939;border-radius:1px;"></span></span>Artisan Compagnon – 25 ans d'expérience</div>
-      <h1 class="hero-title">Votre Toiture,<br>Notre <span>Savoir-Faire.</span></h1>
-      <p class="hero-subtitle">Compagnon Destrich – Artisan couvreur issu du Compagnonnage, 25 ans d'expérience. Nettoyage, démoussage, traitement hydrofuge, intervention d'urgence sur Grenoble, Sassenage, Voiron et toute l'Isère.</p>
-      <div class="hero-btns">
-        <a class="btn-primary" data-page="contact">Devis Gratuit & Rapide</a>
-        <a class="btn-secondary" data-page="realisations">Voir nos Réalisations</a>
+    <div class="hero-content" style="display:flex;align-items:center;gap:3rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:320px;">
+        <div class="hero-badge"><span style="display:inline-flex;gap:3px;margin-right:8px;"><span style="width:10px;height:22px;background:#002395;border-radius:2px;"></span><span style="width:10px;height:22px;background:#fff;border-radius:2px;"></span><span style="width:10px;height:22px;background:#ED2939;border-radius:2px;"></span></span>Artisan Compagnon – 25 ans d'expérience</div>
+        <h1 class="hero-title">Le Vrai Couvreur<br>de l'<span>Isère.</span></h1>
+        <p class="hero-subtitle">Compagnon Destrich – Artisan couvreur issu du Compagnonnage, 25 ans d'expérience. Nettoyage, démoussage, traitement hydrofuge, intervention d'urgence sur Grenoble, Sassenage, Voiron et toute l'Isère.</p>
+        <div class="hero-stats" style="margin-top:1.5rem;">
+          <div><div class="stat-num">25</div><div class="stat-label">Années d'expérience</div></div>
+          <div><div class="stat-num">500+</div><div class="stat-label">Chantiers réalisés</div></div>
+          <div><div class="stat-num">100%</div><div class="stat-label">Satisfaction client</div></div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div><div class="stat-num">25</div><div class="stat-label">Années d'expérience</div></div>
-        <div><div class="stat-num">500+</div><div class="stat-label">Chantiers réalisés</div></div>
-        <div><div class="stat-num">100%</div><div class="stat-label">Satisfaction client</div></div>
+      <div style="flex:0 0 380px;max-width:420px;">
+        <div class="contact-form-wrap" style="background:rgba(255,255,255,.97);padding:2rem;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.3);">
+          <div class="form-title" style="color:var(--text);font-size:1.2rem;margin-bottom:1rem;">Devis Gratuit sous 24h</div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" style="color:var(--text-mid);">Prénom *</label><input type="text" class="form-input" placeholder="Votre prénom" id="hf-prenom"/></div>
+            <div class="form-group"><label class="form-label" style="color:var(--text-mid);">Nom *</label><input type="text" class="form-input" placeholder="Votre nom" id="hf-nom"/></div>
+          </div>
+          <div class="form-group"><label class="form-label" style="color:var(--text-mid);">Téléphone *</label><input type="tel" class="form-input" placeholder="06 XX XX XX XX" id="hf-tel"/></div>
+          <div class="form-group"><label class="form-label" style="color:var(--text-mid);">Type de prestation *</label>
+            <select class="form-select form-input" id="hf-service">
+              <option value="">Sélectionnez un service…</option>
+              <option>Nettoyage / Démoussage Toiture</option>
+              <option>Traitement Hydrofuge / Résine</option>
+              <option>Bandeau Alu / Zinguerie</option>
+              <option>Nettoyage / Traitement Façade</option>
+              <option>Travaux avec Nacelle</option>
+              <option>Intervention d'Urgence</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label" style="color:var(--text-mid);">Commune</label><input type="text" class="form-input" placeholder="Ville, code postal…" id="hf-ville"/></div>
+          <div class="form-group"><label class="form-label" style="color:var(--text-mid);">Description</label><textarea class="form-textarea" placeholder="Décrivez votre projet…" id="hf-msg" style="min-height:60px;"></textarea></div>
+          <button class="form-submit" data-form="hf" style="width:100%;margin-top:.5rem;">Envoyer ma Demande</button>
+          <div class="form-success" id="form-success-hf" style="color:#16a34a;">Merci ! Nous vous contactons dans les 24h.</div>
+          <div style="text-align:center;margin-top:.8rem;font-size:.75rem;color:var(--text-muted);">
+            <a href="tel:0779496553" style="color:var(--orange);font-weight:600;font-size:.85rem;">📞 07 79 49 65 53</a><br>
+            <span style="margin-top:4px;display:inline-block;">Réponse garantie sous 24h</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -145,9 +173,9 @@
         <div class="section-line"></div>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/hero.jpg" alt="Casquette Compagnon Destrich sur toiture"/></div>
-        <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/toiture-1.jpg" alt="Toiture tuiles neuves Isère"/></div>
-        <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/hero-2.jpg" alt="Toiture neuve montagnes Grenoble"/></div>
+        <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/grenoble-1.jpg" alt="Grenoble vue aérienne montagnes"/></div>
+        <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/grenoble-2.jpg" alt="Grenoble Isère toitures montagnes"/></div>
+        <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/demoussage.jpg" alt="Nettoyage démoussage toiture couvreur"/></div>
         <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/zinguerie-7.jpg" alt="Zinguerie abergement cheminée"/></div>
         <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/chantier-2.jpg" alt="Chantier toiture équipe Destrich"/></div>
         <div class="gallery-item"><div class="gallery-overlay"></div><img src="img/toiture-5.jpg" alt="Pose tuiles faîtage Isère"/></div>
@@ -247,62 +275,6 @@
     </div>
   </section>
 
-  <!-- FORMULAIRE CONTACT EN PAGE ACCUEIL -->
-  <section class="home-contact">
-    <div class="home-contact-inner">
-      <div class="home-contact-left">
-        <span class="section-tag" style="color:rgba(232,92,13,.7)">Réponse sous 24h</span>
-        <h2 class="section-title" style="color:#fff;">Demandez Votre <span>Devis Gratuit</span></h2>
-        <div class="section-line"></div>
-        <p>Artisan couvreur compagnon, 25 ans d'expérience. Grenoble, Sassenage, Voiron et toute l'Isère. Nettoyage toiture, démoussage, hydrofuge, façade, nacelle, urgence. Devis gratuit sous 24h.</p>
-        <div class="home-contact-items">
-          <div class="hc-item">
-            <div class="hc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 0114 1.18 2 2 0 0116 3.18v3a2 2 0 01-1.45 1.94l-1.35.45a14 14 0 006.23 6.23l.45-1.35A2 2 0 0122 16.92z"/></svg></div>
-            <div><div class="hc-label">Téléphone</div><div class="hc-value"><a href="tel:0779496553">07 79 49 65 53</a></div></div>
-          </div>
-          <div class="hc-item">
-            <div class="hc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div><div class="hc-label">Email</div><div class="hc-value"><a href="mailto:Multi.bat@live.fr">Multi.bat@live.fr</a></div></div>
-          </div>
-          <div class="hc-item">
-            <div class="hc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="3"/></svg></div>
-            <div><div class="hc-label">Adresses</div><div class="hc-value">4 rue Amédée Morel – 38100 Grenoble<br>18 chemin du Bac – 38360 Sassenage</div></div>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form-wrap">
-        <div class="form-title">Votre Demande de Devis</div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Prénom *</label><input type="text" class="form-input" placeholder="Votre prénom" id="hf-prenom"/></div>
-          <div class="form-group"><label class="form-label">Nom *</label><input type="text" class="form-input" placeholder="Votre nom" id="hf-nom"/></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Téléphone *</label><input type="tel" class="form-input" placeholder="06 XX XX XX XX" id="hf-tel"/></div>
-          <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="votre@email.fr" id="hf-email"/></div>
-        </div>
-        <div class="form-group"><label class="form-label">Type de prestation *</label>
-          <select class="form-select form-input" id="hf-service">
-            <option value="">Sélectionnez un service…</option>
-            <option>Nettoyage / Démoussage Toiture</option>
-            <option>Traitement Hydrofuge / Résine</option>
-            <option>Bandeau Alu / Zinguerie</option>
-            <option>Nettoyage / Traitement Façade</option>
-            <option>Travaux avec Nacelle</option>
-            <option>Intervention d'Urgence</option>
-            <option>Autre</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Commune</label><input type="text" class="form-input" placeholder="Ville, code postal…" id="hf-ville"/></div>
-          <div class="form-group"><label class="form-label">Urgence ?</label><select class="form-select form-input" id="hf-urgence"><option value="">Non, travaux planifiés</option><option>Oui, intervention urgente</option></select></div>
-        </div>
-        <div class="form-group"><label class="form-label">Description du projet</label><textarea class="form-textarea" placeholder="Décrivez votre projet : surface, état actuel, travaux souhaités…" id="hf-msg"></textarea></div>
-        <button class="form-submit" data-form="hf">Envoyer ma Demande de Devis</button>
-        <div class="form-success" id="form-success-hf">Merci ! Votre demande a été reçue. Nous vous contactons dans les 24h.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA -->
   <div class="cta-banner">
     <div class="cta-inner">
@@ -325,7 +297,7 @@
   </div>
   <div class="services-list">
     <div class="service-item reveal" data-subpage="toiture">
-      <div class="service-photo"><img src="img/toiture-1.jpg" alt="Nettoyage toiture Grenoble"/></div>
+      <div class="service-photo"><img src="img/demoussage.jpg" alt="Nettoyage démoussage toiture Grenoble"/></div>
       <div class="service-content">
         <div class="service-num">01</div>
         <h3 class="service-title">Nettoyage & Démoussage Toiture</h3>
@@ -393,7 +365,7 @@
 <!-- TOITURE -->
 <div class="page" id="page-toiture">
   <div class="subpage-hero">
-    <img src="img/toiture-1.jpg" alt="Couverture toiture Isère"/>
+    <img src="img/demoussage.jpg" alt="Nettoyage démoussage toiture Isère"/>
     <div class="subpage-hero-content">
       <div class="back-btn" data-page="services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> Retour aux services</div>
       <h1>Nettoyage <span>& Démoussage Toiture</span></h1>
@@ -418,6 +390,7 @@
           <li>Devis gratuit et diagnostic sur place</li>
         </ul>
         <div class="subpage-photos" style="margin-top:2.5rem;">
+          <img src="img/demoussage.jpg" alt="Démoussage nettoyage toiture haute pression"/>
           <img src="img/hero.jpg" alt="Casquette Compagnon Destrich toiture"/>
           <img src="img/toiture-2.jpg" alt="Toiture chantier Grenoble"/>
           <img src="img/toiture-4.jpg" alt="Couvreur pose tuiles"/>
@@ -828,7 +801,7 @@
   <section class="about-story">
     <div class="about-story-grid">
       <div class="about-visual reveal">
-        <img src="img/hero.jpg" alt="Compagnon Destrich couvreur Isère" class="about-photo-main"/>
+        <img src="img/grenoble-1.jpg" alt="Grenoble vue aérienne – Compagnon Destrich couvreur Isère" class="about-photo-main"/>
         <div class="about-badge-orange"><div class="about-badge-num">38</div><div class="about-badge-text">Isère</div></div>
       </div>
       <div class="about-text-section">
